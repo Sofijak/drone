@@ -59,7 +59,7 @@ var TrackerUtils = (function() {
                     deltaG > 0.8 && deltaG < 1.2;
             });
         }
-
+        TrackerUtils.addTrackingColor("#5EA24E", "green", tracker);
     }
 
     my.loadImage = function (data, element) {
