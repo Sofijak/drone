@@ -1,6 +1,6 @@
 var Cylon = require('cylon');
 var bot;
-//var utils = require('./utils/droneUtils.js');
+var utils = require('utils/droneUtils.js');
 
 // Initialise the robot
 Cylon.robot()
@@ -37,6 +37,8 @@ function fly(robot) {
         }
     });
 
+   // bot.drone.getPngStream()
+     //   .on("data", utils.sendFrame);
 
     bot.nav.on("batteryChange", function(data) {
         console.log("Battery level:", data);
